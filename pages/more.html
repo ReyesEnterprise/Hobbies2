@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e901d27abd.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+</head>
+
+<!-- header -->
+<header class="icon">
+    <img src="../images/lion.png" alt="lion" height="50px">
+    <h1 class="title">Albert R.</h1>
+</header>
+
+<!-- nav bar  -->
+<nav id="nav_menu">
+    <ul>
+        <li> <a href="idex.html">Home</a></li>
+        <li> <a href="#">More</a></li>
+        <li> <a href="Drones.html">Drones</a></li>
+        <li> <a href="Guitars.html">Guitar</a></li>
+        <li> <a href="Editing.html">Editing</a></li>
+    </ul>
+</nav>
+
+<!-- forms -->
+<body>
+    <section class="feedback">
+        <h1>Feedback</h1>
+        <form action="register_account.html" method="get"
+            name="registration_form" id="registration_form">
+            <fieldset>
+                <legend>About You</legend>
+                <label for="email">E-Mail:</label>
+                <input type="email" name="email" id="email" autofocus required><br>
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name" required><br>
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name" required><br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="999-999-9999" 
+                          pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format"><br>
+                <form action="/html/tags/html_form_tag_action.cfm" method="post">
+                <div class="textarea">
+                <textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+                </textarea>
+                 <input type="submit" value="Submit">
+                </div>
+               
+                </form>
+            </fieldset>
+        </form>
+    </section>
+
+    <!-- Footer section -->
+<footer>
+    <ul>
+        <li>
+           <a href="../idex.html">Home</a>
+        </li>
+        <li>
+            <a href="#">More</a>
+        </li>
+        <li>
+            <a href="./pages/Drones.html">Drones</a>
+        </li>
+        <li>
+            <a href="./pages/Guitars.html">Guitar</a>
+        </li>
+        <li>
+            <a href="./pages/Editing.html">Editing</a>
+        </li>
+    </ul>
+  </footer>
+
+  <hr/>
+
+    <div>
+        <ul class="social">
+            <li>
+               <a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a>
+            </li>
+            <li>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> Linkdin</a>
+            </li>
+            <li>
+                <a href="#"> <i class="fa-brands fa-github"></i> github</a>
+            </li>
+        </ul>
+    </div>
+  <p class="companyTag">
+    © 2024 Company, Inc
+  </p>  
+</body>
+</html>

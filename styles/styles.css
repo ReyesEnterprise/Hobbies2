@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+
+
+/* body */
+body{
+    background-color:#001F3D ;
+    font-family:"Roboto", sans-serif;
+    color: #F8DCBF;
+}
+
+/* page under construction */
+
+.Construction{
+    font-size: 100px;
+    text-align: center;
+}
+
+/* header */
+.icon{
+    background: rgb(250,153,57);
+    background: linear-gradient(90deg, rgba(250,153,57,1) 20%, rgba(248,220,191,1) 50%, rgba(250,153,57,1) 80%);
+    padding: 10px 0 10px 20px;
+    color: #F8DCBF;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Button */
+
+button{
+    background-color:#FA9939;
+    border-radius: 20px;
+    padding: 8px;
+    width: 125px;
+}
+
+button a{
+    color: #F8DCBF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+header .title{
+    align-self: flex-end;
+}
+
+header img {
+    padding-right: 10px;
+}
+
+
+
+/* the styles for the navigation menu */
+
+  #nav_menu ul{
+    list-style: none;
+     display: flex; 
+     background-color: #045174;
+     align-items: center; 
+     justify-content: space-evenly;
+     height: 50px;
+   }
+
+  #nav_menu ul li a {
+    text-decoration: none;
+    color: #F8DCBF;
+    font-weight: bold;
+    font-size: 25px; 
+    align-self: center;
+    }
+
+
+    /* main_contant - for the main page */
+
+    main{
+       padding: 150px 200px 250px 200px;
+    }
+
+    main h1{
+        font-size: 100px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    main img{
+        float: right;
+        padding: 0 0 10px 20px;
+    }
+
+    .title p{
+       font-size: 20px;
+       line-height: 25px;
+    }
+
+    /* Grid section in main page */
+
+      .MyHobbies{
+        font-size: 100px;
+        text-align: center;
+        padding: 145px 200px 80px 200px;
+      }
+
+      .containerGrid{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+        gap: 20px;
+        padding: 0 200px 300px 200px ;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .item-1{
+        grid-column: 1 / 2 ;
+        grid-row: 1 / 2 ;
+        font-size: 50px;
+      }
+
+      .item-2{
+        grid-column: 1 / 2 ;
+        grid-row: 2 / 3;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .item-3{
+        grid-column: 1 / 2 ;
+        grid-row: 3 / 4;
+        
+      }
+
+      .item-4{
+        grid-column: 2 / 3 ;
+        grid-row:1 / 2;
+      }
+
+      .item-5{
+        grid-column: 2 / 3 ;
+        grid-row: 2 / 3;
+        font-size: 50px;
+      }
+
+      .item-6{
+        grid-column: 2 / 3 ;
+        grid-row: 3 / 4;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .item-7{
+        grid-column: 3 / 4 ;
+        grid-row: 1 / 2;
+        font-size: 50px;
+      }
+
+      .item-8{
+        grid-column: 3 / 4 ;
+        grid-row: 2 / 3;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .item-9{
+        grid-column: 3 / 4 ;
+        grid-row: 3 / 4;
+      }
+
+
+
+    /* Drones page */
+    
+    .Container{
+        display: flex;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 150px;
+        gap: 50px;
+    }
+    
+
+    #box1{
+        float: left;
+        padding-right: 20px;
+    }
+
+
+    #box1 p{
+        font-size: 20px;
+        line-height: 25px;
+    } 
+    
+
+    .box2{
+        float: right;
+        padding-left: 20px;
+        align-self: flex-start;
+    }
+
+
+    .Drones{
+        font-size: 100px;
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 80px;
+    }
+
+    .Img{
+        float: left;
+    }
+
+    .DroneNav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .DroneNav a{
+        font-size: 25px;
+    } 
+
+    .learn{
+        text-align: center;
+        padding-bottom: 12px;
+        font-weight: bold;
+        font-size: 23px;
+    }
+    
+
+    /* Guitar page */
+
+    .Img2{
+        float: right;
+        padding: 0 0 20px 20px;
+    }
+
+    /* Editing page */
+
+    .Img3{
+        float: left;
+        padding: 0 20px 20px 0;
+    }
+
+    /* Footer - Top */
+
+    footer{
+        padding-top: 10px;
+       
+    }
+
+    footer ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: none; 
+        padding-bottom: 20px;
+        
+    }
+
+    footer ul a{
+        padding-left: 50px;
+        text-decoration: none;
+        color:#F9AF67;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+
+    /* hr break */
+
+    hr{
+        width: 80%;
+        margin: auto;
+        
+    }
+
+
+      /* Footer - Bottom */
+
+
+    .social{
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding-bottom: 50px;
+      padding-top: 20px;
+    }
+
+    .social a {
+        text-decoration: none;
+        padding-left: 50px;
+        color:#F9AF67;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .social a i{
+        padding-right: 10px;
+    }
+
+   .companyTag{
+    text-align: center;
+    color: #F9AF67;
+   }
+
+
+
+   /* the styles for the form */
+.textarea{
+    padding-left: 180px;
+}
+
+.feedback{
+  padding: 100px 250px 300px 250px;
+}
+
+fieldset {
+    margin-top: 0;
+    margin-bottom: .5em;
+    padding-top: 0;
+}
+legend {
+    color:black;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+label {
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+label, input, select {
+	font-size: 90%;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] {
+	border: 3px solid red;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+}
+br {
+    clear: both;
+}
+#buttons input {
+	width: auto;
+	
+}
+
+#payment label{
+	float:none;
+	margin: .5em;
+	
+}
+
+#payment input{
+   margin-left: 3em;
+   width: 50px;
+}
+
+   /* media-query  */
+  
+   @media(max-width:1390px){
+    .Container{
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+    }
+
+    .DroneNav{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    section  {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .main_img{
+        padding: 0 200px 20px 250px;
+    }
+
+   }
+
+
+   @media(max-width:1080px){
+    .main_img{
+        padding: 0 193px 20px 90px;
+    }
+   }
+
+   @media(max-width: 850px){
+
+   
+	#mobile_menu {
+		display: block;
+	}
+   }
+
+   /* hovers and transistions  */
+
+   button :hover {
+    color: #045174;
+   }
+
+
+
