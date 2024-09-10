@@ -1,0 +1,132 @@
+/* media-query  */
+@media (max-width: 1600px) {
+  .item-3 img {
+    width: 350px;
+  }
+
+  .item-9 img {
+    width: 350px;
+  }
+}
+/* large screens / laptopscreens anything bigger then 1390px is for desktops */
+
+@media (max-width: 1390px) {
+  .Container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .DroneNav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main_img {
+    padding: 0 200px 20px 250px;
+  }
+
+  .item-3 img {
+    width: 300px;
+  }
+
+  .item-9 img {
+    width: 300px;
+  }
+}
+
+/* medium sceens / 1080px - 700 px mostly for tablets  */
+@media (max-width: 1080px) {
+  .main_img {
+    padding: 0 193px 20px 90px;
+  }
+
+  .containerGrid {
+    padding: 0 200px 300px 70px;
+  }
+}
+
+@media (max-width: 980px) {
+  .containerGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .item-4 {
+    order: 1;
+  }
+
+  .item-5 {
+    order: 2;
+  }
+
+  .item-6 {
+    order: 3;
+  }
+
+  .item-3 {
+    order: 4;
+  }
+
+  .item-1 {
+    order: 5;
+  }
+
+  .item-2 {
+    order: 6;
+  }
+
+  .item-9 {
+    order: 7;
+  }
+  .item-7 {
+    order: 8;
+  }
+
+  .item-8 {
+    order: 9;
+  }
+}
+
+/* small screens / 700px and down is for mobile screens */
+@media (max-width: 700px) {
+  .Container {
+    padding-left: 110px;
+  }
+
+  footer ul a {
+    padding-left: 20px;
+  }
+  .social a {
+    padding-left: 25px;
+  }
+
+  .Img2 {
+    padding-left: 0;
+    padding-right: 30px;
+  }
+  .feedback {
+    padding-left: 80px;
+  }
+
+  main {
+    padding: 60px 200px 250px 50px;
+  }
+
+  .main_img {
+    padding: 0 193px 20px 0;
+  }
+
+  .MyHobbies {
+    padding: 145px 200px 80px 0px;
+  }
+}

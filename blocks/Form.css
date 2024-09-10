@@ -1,0 +1,62 @@
+/* the styles for the form */
+.textarea {
+  padding-left: 180px;
+}
+
+.feedback {
+  padding: 100px 250px 300px 250px;
+}
+
+fieldset {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  padding-top: 0;
+}
+legend {
+  color: black;
+  font-weight: bold;
+  font-size: 85%;
+  margin-bottom: 0.5em;
+}
+label {
+  float: left;
+  width: 12em;
+  text-align: right;
+}
+label,
+input,
+select {
+  font-size: 90%;
+}
+input,
+select {
+  width: 15em;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+input:required,
+input[required] {
+  border: 3px solid red;
+}
+input:valid {
+  border: 1px solid black;
+}
+input:invalid {
+  box-shadow: none;
+}
+br {
+  clear: both;
+}
+#buttons input {
+  width: auto;
+}
+
+#payment label {
+  float: none;
+  margin: 0.5em;
+}
+
+#payment input {
+  margin-left: 3em;
+  width: 50px;
+}

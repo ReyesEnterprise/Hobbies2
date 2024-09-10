@@ -1,0 +1,15 @@
+/* Button */
+
+button {
+  background-color: #fa9939;
+  border-radius: 20px;
+  padding: 8px;
+  width: 125px;
+}
+
+button a {
+  color: #f8dcbf;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+}

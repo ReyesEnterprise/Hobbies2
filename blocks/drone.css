@@ -1,0 +1,54 @@
+/* Drones page */
+
+.Container {
+  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 150px;
+  gap: 50px;
+}
+
+#box1 {
+  float: left;
+  padding-right: 20px;
+}
+
+#box1 p {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.box2 {
+  float: right;
+  padding-left: 20px;
+  align-self: flex-start;
+}
+
+.Drones {
+  font-size: 100px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 80px;
+}
+
+.Img {
+  float: left;
+}
+
+.DroneNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.DroneNav a {
+  font-size: 25px;
+}
+
+.learn {
+  text-align: center;
+  padding-bottom: 12px;
+  font-weight: bold;
+  font-size: 23px;
+}
