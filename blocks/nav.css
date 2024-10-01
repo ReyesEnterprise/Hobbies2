@@ -8,19 +8,18 @@
   );
   padding: 10px 0 0;
   color: #f8dcbf;
-  display: flex;
-  flex-direction: column;
 }
 
-.nav__icon {
+.nav__container {
   display: flex;
   align-items: center;
 }
 
 .nav__title {
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 30px;
 }
+/* nav menu block */
 
 .nav__links {
   list-style: none;

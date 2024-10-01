@@ -1,5 +1,10 @@
 /* page under construction */
 .Construction {
   font-size: 100px;
-  text-align: center;
+  color: white;
+  height: 100vh;
+  background-color: #001f3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

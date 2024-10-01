@@ -1,0 +1,10 @@
+.page {
+  background-color: #001f3d;
+  font-family: "Roboto", sans-serif;
+  color: #f8dcbf;
+}
+
+.page__section {
+  max-width: 1440px;
+  margin: 0 auto;
+}

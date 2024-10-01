@@ -1,0 +1,17 @@
+.cards {
+  padding: 0 40px;
+}
+
+.cards__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 413px);
+  justify-content: center;
+  gap: 40px;
+}
+
+.cards__title {
+  font-size: 80px;
+  text-align: center;
+  padding: 60px 0;
+}
