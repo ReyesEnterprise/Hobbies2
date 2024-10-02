@@ -5,10 +5,12 @@ But I am always open to some Feedback as we are always learning and working towa
 
 1: This site is not a professional website.
 
-2: This website is better on a larger screen but was made 
+2: This website is better on a larger screen but was made
 adaptable to smaller screens like phones and tablets.
 
-3: This is a website for my final project for a school our assignment was to work with 
-CSS and HTML primarily so if things like forms don't work properly yet it's mainly intentional. 
+3: This is a website for my final project for a school our assignment was to work with
+CSS and HTML primarily so if things like forms don't work properly yet it's mainly intentional.
 
-in conclusion, thank you for your time, and ENJOY!! 
+in conclusion, thank you for your time, and ENJOY!!
+
+## [GitHub Pages link](https://reyesenterprise.github.io/Hobbies2/idex.html)
