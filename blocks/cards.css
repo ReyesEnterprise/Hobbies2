@@ -15,3 +15,9 @@
   text-align: center;
   padding: 60px 0;
 }
+
+@media screen and (max-width: 700px) {
+  .cards__list {
+    grid-template-columns: repeat(auto-fit, 288px);
+  }
+}

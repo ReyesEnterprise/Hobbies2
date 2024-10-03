@@ -40,3 +40,9 @@
 main {
   margin: 200px 0;
 }
+
+@media screen and (max-width: 644px) {
+  .card__image {
+    height: 250px;
+  }
+}

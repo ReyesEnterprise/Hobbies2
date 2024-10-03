@@ -13,3 +13,7 @@ button a {
   font-weight: bold;
   font-size: 25px;
 }
+
+button :hover {
+  color: #045174;
+}

@@ -37,3 +37,9 @@
   font-size: 25px;
   align-self: center;
 }
+
+@media screen and (max-width: 825px) {
+  .nav__link {
+    font-size: 20px;
+  }
+}

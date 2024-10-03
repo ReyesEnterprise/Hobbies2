@@ -1,17 +1,21 @@
-/* Footer - Top */
-
 footer {
   padding-top: 10px;
 }
 
-footer ul {
+.footer__container-list {
+  border-bottom: 1px solid white;
+  width: 80%;
+  margin: 0 auto 10px;
+}
+
+.footer__links {
   display: flex;
   justify-content: center;
   list-style-type: none;
   padding-bottom: 20px;
 }
 
-footer ul a {
+.footer__item {
   padding-left: 50px;
   text-decoration: none;
   color: #f9af67;
@@ -19,36 +23,18 @@ footer ul a {
   font-size: 25px;
 }
 
-/* hr break */
-
-hr {
-  width: 80%;
-  margin: auto;
-}
-
-/* Footer - Bottom */
-
-.social {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding-bottom: 50px;
-  padding-top: 20px;
-}
-
-.social a {
-  text-decoration: none;
-  padding-left: 50px;
-  color: #f9af67;
-  font-weight: bold;
-  font-size: 25px;
-}
-
-.social a i {
+.fa-brands {
   padding-right: 10px;
 }
 
-.companyTag {
+.footer__companyTag {
   text-align: center;
   color: #f9af67;
+}
+
+@media screen and (max-width: 700px) {
+  .footer__item {
+    font-size: 18px;
+    padding-left: 15px;
+  }
 }

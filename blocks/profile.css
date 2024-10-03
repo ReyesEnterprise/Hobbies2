@@ -18,3 +18,43 @@
   line-height: 44px;
   font-size: 30px;
 }
+/* desktop view port */
+@media screen and (max-width: 1040px) {
+  .profile__title {
+    font-size: 70px;
+  }
+}
+
+/* tablet view port - large */
+@media screen and (max-width: 760px) {
+  .profile__container {
+    padding: 100px 60px;
+  }
+
+  .profile__title {
+    font-size: 60px;
+  }
+
+  .profile__img {
+    padding: 10px 0;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .profile__discription {
+    font-size: 25px;
+  }
+}
+
+/* mobile view port  */
+@media screen and (max-width: 500px) {
+  .profile__discription {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .profile__title {
+    font-size: 55px;
+  }
+}
