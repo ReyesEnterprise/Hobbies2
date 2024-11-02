@@ -5,12 +5,4 @@
 @import url(../blocks/cards.css);
 @import url(../blocks/card.css);
 @import url(../blocks/Footer.css);
-
-@import url(../blocks/construction.css);
-
-/* @import url(../blocks/drone.css);
-@import url(../blocks/Guitar.css);
-@import url(../blocks/buttons.css);
-@import url(../blocks/Form.css);
-@import url(../blocks/mediaQ.css);
-@import url(../blocks/hoverAndTransitions.css); */
+@import url(../blocks/modal.css);

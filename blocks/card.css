@@ -4,12 +4,11 @@
   border: 2px solid white;
   border-radius: 8px;
   background-color: #000635;
+  transition: box-shadow 0.5s ease-in-out;
 }
 
 .card:hover {
-  color: #000635;
-  background-color: white;
-  box-shadow: 0px 0px 20px 8px white;
+  box-shadow: 0 5px 20px 5px #fbf9f1;
 }
 
 .card__image {
@@ -37,8 +36,20 @@
   font-size: 20px;
 }
 
-main {
-  margin: 200px 0;
+.card__more-btn {
+  width: 100%;
+  margin: 20px 0;
+  height: 50px;
+  border-radius: 8px;
+  border: 0;
+  background-color: #064663;
+  color: #f8dcbf;
+  font-size: 20px;
+  font-family: "roboto", sans-serif;
+}
+
+.card__more-btn:hover {
+  background-color: #0a87c1;
 }
 
 @media screen and (max-width: 644px) {

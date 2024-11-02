@@ -31,10 +31,11 @@
           <!-- nav-menu"> -->
           <ul class="nav__links">
             <li><a href="idex.html" class="nav__link">Home</a></li>
-            <li><a href="pages/more.html" class="nav__link">More</a></li>
-            <li><a href="pages/Drones.html" class="nav__link">Drones</a></li>
-            <li><a href="pages/Guitars.html" class="nav__link">Guitar</a></li>
-            <li><a href="pages/Editing.html" class="nav__link">Editing</a></li>
+            <li><a href="#" class="nav__link">More</a></li>
+            <li><a href="#Drone" class="nav__link">Drones</a></li>
+            <li><a href="#Guitar" class="nav__link">Guitar</a></li>
+            <li><a href="#edit" class="nav__link">Editing</a></li>
+            <li><a href="#Print" class="nav__link">3D Prints</a></li>
           </ul>
         </nav>
 
@@ -85,7 +86,9 @@
                   spend hours on my computer trying to get that perfect clip for
                   my home video.
                 </p>
-                <!-- <button type="button" class="card__like-btn"></button> -->
+                <button type="button" class="card__more-btn" id="edit">
+                  More
+                </button>
               </div>
             </li>
             <li class="card">
@@ -97,12 +100,16 @@
               <div class="card__content">
                 <h3 class="card__title">Drones</h3>
                 <p class="card__discription">
-                  Drones have been a hobby of mine for a while now but when I
-                  was a child I wanted to be a pilot although it always seemed
-                  out of reach. Now with drones being more affordable than ever,
-                  I can finally get my wings, well at least in a virtual sense.
+                  Drones have been a hobby of mine for a while now, but when I
+                  was a child I wanted to be a pilot. flying planes and
+                  helicopters where allways the big dream, although it always
+                  seemed out of reach. Now with drones being more affordable
+                  than ever in latest years , I can finally get my wings, well
+                  at least in a virtual sense anyways.
                 </p>
-                <!-- <button type="button" class="card__like-btn"></button> -->
+                <button type="button" class="card__more-btn" id="Drone">
+                  More
+                </button>
               </div>
             </li>
             <li class="card">
@@ -121,7 +128,30 @@
                   say any words, with every strum and every note it unlocks a
                   new part of your brain that can't be expressed but only felt.
                 </p>
-                <!-- <button type="button" class="card__like-btn"></button> -->
+                <button type="button" class="card__more-btn" id="Guitar">
+                  More
+                </button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                src="./images/pexels-jakubzerdzicki-19124461.jpg"
+                alt="Editing"
+                class="card__image"
+              />
+              <div class="card__content">
+                <h3 class="card__title">3D printing</h3>
+                <p class="card__discription">
+                  growing up I've always been a movie buff I loved how movies
+                  unfold and tell a story, how they touch and pull at your
+                  emotions. Of course, the next natural step would be to want to
+                  make my own movies...right? at least for me, it was I could
+                  spend hours on my computer trying to get that perfect clip for
+                  my home video.
+                </p>
+                <button type="button" class="card__more-btn" id="Print">
+                  More
+                </button>
               </div>
             </li>
           </ul>
@@ -129,7 +159,7 @@
       </main>
       <!-- Footer section -->
       <footer class="footer">
-        <div class="footer__container footer__container-list">
+        <div class="footer__container footer__border">
           <ul class="footer__links">
             <li><a href="../idex.html" class="footer__item">Home</a></li>
             <li><a href="#" class="footer__item">More</a></li>
@@ -166,6 +196,229 @@
         </div>
         <p class="footer__companyTag">© 2024 Company, Inc</p>
       </footer>
+      <!-- modal for editing -->
+      <div class="modal" id="video_editingModal">
+        <div class="modal__container">
+          <button type="submit" class="modal__close-btn">
+            <img
+              class="modal__close-btn-img"
+              src="./images/Close Icon.jpg"
+              alt="modal__close-btn"
+            />
+          </button>
+          <h2 class="modal__title">Editing</h2>
+          <img
+            src="./images/Editing.jpeg"
+            class="modal__img"
+            alt="Editing more"
+          />
+          <p class="modal__discription">
+            Editing videos is more than just a task—it's a passion that fuels my
+            creativity and drives me to perfect my craft. With each clip
+            trimmed, transition smoothed, and color-corrected, I immerse myself
+            in a world where storytelling comes to life The process of editing
+            videos challenges me to think critically, problem-solve, and
+            innovate to bring my vision to fruition. It's not just about cutting
+            and pasting—it's about creating a seamless narrative that captivates
+            viewers and evokes emotions. The ability to manipulate visuals and
+            sound to convey a message is a powerful skill that I cherish. Every
+            completed video is a testament to my dedication and growth in this
+            art form. Editing videos isn't just a hobby; it's a love affair that
+            ignites my soul and fuels my desire to keep pushing boundaries in
+            the realm of visual storytelling.
+          </p>
+          <div class="modal__btn-flex">
+            <button class="modal__btn-link">
+              <a
+                class="modal__btn-links"
+                href="../images/Elieens Rollercoster Adventure copy.mp4"
+                >My Edit</a
+              >
+            </button>
+            <button class="modal__btn-link">
+              <a
+                class="modal__btn-links"
+                href="https://www.youtube.com/watch?v=3yYSZTnf96Y"
+                >Software</a
+              >
+            </button>
+            <button class="modal__btn-link">
+              <a
+                class="modal__btn-links"
+                href="https://www.youtube.com/watch?v=y7Ci_H9bYEk"
+                >more</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- drone modal -->
+      <div class="modal" id="DronesModal">
+        <div class="modal__container">
+          <button type="submit" class="modal__close-btn">
+            <img
+              class="modal__close-btn-img"
+              src="./images/Close Icon.jpg"
+              alt="modal__close-btn"
+            />
+          </button>
+          <h2 class="modal__title">Drones</h2>
+          <img
+            src="./images/Dji_Drone.png"
+            class="modal__img"
+            alt="Drone more"
+          />
+          <p class="modal__discription">
+            Drones have become increasingly popular in recent years, and their
+            uses are widespread. There are many types of drones and different
+            applications, for them. Drones can be classified into two main
+            categories: recreational and professional. Recreational drones are
+            typically used for hobby purposes, such as aerial photography or
+            racing. They are smaller in size and operate at lower altitudes. On
+            the other hand, professional drones are larger and more advanced,
+            often used for commercial purposes like agriculture, construction,
+            and surveillance. The applications of drones are diverse and
+            continue to expand. In agriculture, drones equipped with cameras and
+            sensors can monitor crop health, and assess irrigation needs. In the
+            public sector, drones are used for various purposes, including
+            search and rescue missions, and disaster relief operations In
+            conclusion, drones are versatile tools with a wide range of
+            applications. They have the potential to revolutionize various
+            industries.
+          </p>
+          <div class="modal__btn-flex">
+            <button class="modal__btn-link">
+              <a
+                class="modal__btn-links"
+                href="https://www.youtube.com/watch?v=0Wd7ZhGSkRo"
+                >FPV</a
+              >
+            </button>
+            <button class="modal__btn-link">
+              <a
+                class="modal__btn-links"
+                href="https://store.dji.com/product/dji-mini-4-pro-rc-2?from=store_homepage&vid=148611"
+                >MINI</a
+              >
+            </button>
+            <button class="modal__btn-link">
+              <a class="modal__btn-links" href="https://store.dji.com/">DJI</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- guitar modal -->
+      <div class="modal" id="GuitarModal">
+        <div class="modal__container">
+          <button type="submit" class="modal__close-btn">
+            <img
+              class="modal__close-btn-img"
+              src="./images/Close Icon.jpg"
+              alt="modal__close-btn"
+            />
+          </button>
+          <h2 class="modal__title">Guitar</h2>
+          <img
+            src="./images/GuitarPlayer.jpg"
+            class="modal__img"
+            alt="Guitar more"
+          />
+          <p class="modal__discription">
+            Guitars are more than just instruments to me; they are vessels of
+            emotion and creativity. The moment I strum those strings, a wave of
+            tranquility washes over me, connecting me to a deeper part of
+            myself. Each chord, each note, tells a unique story, weaving
+            together melodies that express what words cannot. The versatility of
+            guitars amazes me - from the gentle whisper of a ballad to the
+            roaring power of rock 'n' roll, they can evoke a myriad of emotions.
+            The curves of the body, the smoothness of the fretboard, every
+            detail speaks to me on a profound level. Through guitars, I find
+            solace, passion, and a medium for self-expression. They are not just
+            instruments; they are companions in my journey of self-discovery and
+            creativity.
+          </p>
+          <div class="modal__btn-flex">
+            <button class="modal__btn-link">
+              <a
+                class="modal__btn-links"
+                href="https://www.guitarcenter.com/?source=4WWRWXGT&gad_source=1&gclid=CjwKCAjwjeuyBhBuEiwAJ3vuoS8q6yzF-OdivnA2-57NGIAvGQlsF9-GUEsMBOim7qWhYOo-KTqgsBoCZ3QQAvD_BwE"
+                >Guitars</a
+              >
+            </button>
+            <button class="modal__btn-link">
+              <a
+                class="modal__btn-links"
+                href="https://www.guitarcenter.com/Fender/American-Professional-II-Telecaster-Maple-Fingerboard-Electric-Guitar-Black-1500000331138.gc?pdptypeAheadSearchInput=&tNtt=&tAt=item&tAv=Fender%20American%20Professional%20II%20Telecaster%20Maple%20Fingerboard%20Electric%20Guitar%20Black"
+                >Electric</a
+              >
+            </button>
+            <button class="modal__btn-link">
+              <a
+                class="modal__btn-links"
+                href="https://www.guitarcenter.com/Martin/Special-D-All-Solid-Dreadnought-Acoustic-Guitar-Natural-1500000335259.gc"
+                >Acoustic</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 3d printing modal -->
+      <div class="modal" id="printingModal">
+        <div class="modal__container">
+          <button type="submit" class="modal__close-btn">
+            <img
+              class="modal__close-btn-img"
+              src="./images/Close Icon.jpg"
+              alt="modal__close-btn"
+            />
+          </button>
+          <h2 class="modal__title">Editing</h2>
+          <img
+            src="./images/pexels-jakubzerdzicki-19124461.jpg"
+            class="modal__img"
+            alt="Printing more"
+          />
+          <p class="modal__discription">
+            Editing videos is more than just a task—it's a passion that fuels my
+            creativity and drives me to perfect my craft. With each clip
+            trimmed, transition smoothed, and color-corrected, I immerse myself
+            in a world where storytelling comes to life The process of editing
+            videos challenges me to think critically, problem-solve, and
+            innovate to bring my vision to fruition. It's not just about cutting
+            and pasting—it's about creating a seamless narrative that captivates
+            viewers and evokes emotions. The ability to manipulate visuals and
+            sound to convey a message is a powerful skill that I cherish. Every
+            completed video is a testament to my dedication and growth in this
+            art form. Editing videos isn't just a hobby; it's a love affair that
+            ignites my soul and fuels my desire to keep pushing boundaries in
+            the realm of visual storytelling.
+          </p>
+          <div class="modal__btn-flex">
+            <button class="modal__btn-link">
+              <a
+                class="modal__btn-links"
+                href="../images/Elieens Rollercoster Adventure copy.mp4"
+                >My Edit</a
+              >
+            </button>
+            <button class="modal__btn-link">
+              <a
+                class="modal__btn-links"
+                href="https://www.youtube.com/watch?v=3yYSZTnf96Y"
+                >Software</a
+              >
+            </button>
+            <button class="modal__btn-link">
+              <a
+                class="modal__btn-links"
+                href="https://www.youtube.com/watch?v=y7Ci_H9bYEk"
+                >more</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <script defer src="./script/index.js"></script>
     </div>
   </body>
 </html>
