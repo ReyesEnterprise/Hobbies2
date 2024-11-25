@@ -92,3 +92,18 @@ function closePrintingModal() {
 
 openPrintingButton.addEventListener("click", openprintingModal);
 closePrintingButton.addEventListener("click", closePrintingModal);
+
+// toggle button
+
+const toggleButton = document.querySelector("#toggleButton");
+const navBar = document.querySelector("#navBar");
+
+toggleButton.addEventListener("click", onToggleClick);
+
+function onToggleClick() {
+  navBar.classList.toggle("nav-open");
+}
+
+function closeToggleClick() {
+  toggleButton.classList.toggle("");
+}

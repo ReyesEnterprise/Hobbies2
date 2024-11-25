@@ -23,13 +23,13 @@
       <!-- header  -->
       <header class="header">
         <!-- nav container -->
+        <div class="nav__container">
+          <img class="nav__icon" src="images/lion.png" alt="lion" />
+          <p class="nav__title">Albert R.</p>
+        </div>
         <nav class="nav">
-          <div class="nav__container">
-            <img class="nav__icon" src="images/lion.png" alt="lion" />
-            <p class="nav__title">Albert R.</p>
-          </div>
           <!-- nav-menu"> -->
-          <ul class="nav__links">
+          <ul id="navBar" class="nav__links">
             <li><a href="idex.html" class="nav__link">Home</a></li>
             <li><a href="#" class="nav__link">More</a></li>
             <li><a href="#Drone" class="nav__link">Drones</a></li>
@@ -37,6 +37,9 @@
             <li><a href="#edit" class="nav__link">Editing</a></li>
             <li><a href="#Print" class="nav__link">3D Prints</a></li>
           </ul>
+          <button id="toggleButton" class="nav__toggle">
+            <img class="nav__toggle_img" src="./images/menu-2.svg" alt="menu" />
+          </button>
         </nav>
 
         <!-- profile container -->

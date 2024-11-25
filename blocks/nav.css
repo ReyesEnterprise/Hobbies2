@@ -1,5 +1,8 @@
 /* styles for the navigation menu */
-.nav {
+
+.nav__container {
+  display: flex;
+  align-items: center;
   background: linear-gradient(
     90deg,
     rgba(250, 153, 57, 1) 20%,
@@ -8,11 +11,6 @@
   );
   padding: 10px 0 0;
   color: #f8dcbf;
-}
-
-.nav__container {
-  display: flex;
-  align-items: center;
 }
 
 .nav__title {
@@ -27,7 +25,9 @@
   background-color: #045174;
   align-items: center;
   justify-content: space-evenly;
-  height: 50px;
+  min-height: 50px;
+  position: relative;
+  transition: all 0.4s ease-in;
 }
 
 .nav__link {
@@ -35,11 +35,50 @@
   color: #f8dcbf;
   font-weight: bold;
   font-size: 25px;
-  align-self: center;
+}
+
+.nav__toggle {
+  position: absolute;
+  right: 6px;
+  top: 78px;
+  background: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+.nav__toggle_img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-open {
+  transform: translateY(0) !important;
+}
+
+.removeImg {
+  display: none;
 }
 
 @media screen and (max-width: 825px) {
-  .nav__link {
+  .nav {
+    height: 50px;
+    background-color: #045174;
+  }
+  .nav__links {
     font-size: 20px;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateY(-100%);
+  }
+
+  .nav__container {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 826px) {
+  .nav__toggle {
+    display: none;
   }
 }
