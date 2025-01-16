@@ -27,7 +27,6 @@
   justify-content: space-evenly;
   min-height: 50px;
   position: relative;
-  transition: all 0.4s ease-in;
 }
 
 .nav__link {
@@ -55,10 +54,6 @@
   transform: translateY(0) !important;
 }
 
-.removeImg {
-  display: none;
-}
-
 @media screen and (max-width: 825px) {
   .nav {
     height: 50px;
@@ -69,6 +64,7 @@
     flex-direction: column;
     gap: 20px;
     transform: translateY(-100%);
+    transition: all 0.4s ease-in;
   }
 
   .nav__container {
