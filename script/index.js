@@ -64,6 +64,66 @@ const cardList = document.querySelector(".cards__list");
 
 /*              
     
+                     variables for editing
+                     
+*/
+
+const editOpenButton = document.querySelector("#edit");
+
+const videoEditingModal = document.querySelector("#video_editingModal");
+
+const closeEditButton = videoEditingModal.querySelector(".modal__close-btn");
+
+/*              
+    
+                     variables for drones
+                     
+*/
+
+const openDronesButton = document.querySelector("#Drone");
+
+const DroneModal = document.querySelector("#DronesModal");
+const closeDronesButton = DroneModal.querySelector(".modal__close-btn");
+
+/*              
+    
+                     variables for Guitar
+                     
+*/
+
+const openGuitarButton = document.querySelector("#Guitar");
+
+const GuitarModal = document.querySelector("#GuitarModal");
+
+const closeGuitarButton = GuitarModal.querySelector(".modal__close-btn");
+
+/*              
+    
+                     variables for 3D Printing
+                     
+*/
+
+const openPrintingButton = document.querySelector("#Print");
+
+const PrintingModal = document.querySelector("#printingModal");
+
+const closePrintingButton = PrintingModal.querySelector(".modal__close-btn");
+
+/*              
+    
+                     open / close functions
+                     
+*/
+function openModal(modal) {
+  modal.classList.add("modal_opened");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_opened");
+}
+
+/*              
+    
                      Functions for template 
                      
 */
@@ -99,64 +159,17 @@ initialCards.forEach((element) => {
 
 /*              
     
-                     variables for editing
-                     
-*/
-
-const editOpenButton = document.querySelector("#edit");
-
-const videoEditingModal = document.querySelector("#video_editingModal");
-
-const closeEditButton = videoEditingModal.querySelector(".modal__close-btn");
-
-/*              
-    
-                     functions for editing
-                     
-*/
-
-function openEditModal() {
-  videoEditingModal.classList.add("modal_opened");
-}
-
-function closeEditModal() {
-  videoEditingModal.classList.remove("modal_opened");
-}
-
-/*              
-    
                      event listeners for editing
                      
 */
 
-editOpenButton.addEventListener("click", openEditModal);
+editOpenButton.addEventListener("click", () => {
+  openModal(videoEditingModal);
+});
 
-closeEditButton.addEventListener("click", closeEditModal);
-
-/*              
-    
-                     variables for drones
-                     
-*/
-
-const openDronesButton = document.querySelector("#Drone");
-
-const DroneModal = document.querySelector("#DronesModal");
-const closeDronesButton = DroneModal.querySelector(".modal__close-btn");
-
-/*              
-    
-                     function for drones
-                     
-*/
-
-function openDronesModal() {
-  DroneModal.classList.add("modal_opened");
-}
-
-function closeDronesModal() {
-  DroneModal.classList.remove("modal_opened");
-}
+closeEditButton.addEventListener("click", () => {
+  closeModal(videoEditingModal);
+});
 
 /*              
     
@@ -164,35 +177,13 @@ function closeDronesModal() {
                      
 */
 
-openDronesButton.addEventListener("click", openDronesModal);
+openDronesButton.addEventListener("click", () => {
+  openModal(DroneModal);
+});
 
-closeDronesButton.addEventListener("click", closeDronesModal);
-
-/*              
-    
-                     variables for Guitar
-                     
-*/
-
-const openGuitarButton = document.querySelector("#Guitar");
-
-const GuitarModal = document.querySelector("#GuitarModal");
-
-const closeGuitarButton = GuitarModal.querySelector(".modal__close-btn");
-
-/*              
-    
-                     function for Guitar
-                     
-*/
-
-function openGuitarModal() {
-  GuitarModal.classList.add("modal_opened");
-}
-
-function closeGuitarModal() {
-  GuitarModal.classList.remove("modal_opened");
-}
+closeDronesButton.addEventListener("click", () => {
+  closeModal(DroneModal);
+});
 
 /*              
     
@@ -200,35 +191,13 @@ function closeGuitarModal() {
                      
 */
 
-openGuitarButton.addEventListener("click", openGuitarModal);
+openGuitarButton.addEventListener("click", () => {
+  openModal(GuitarModal);
+});
 
-closeGuitarButton.addEventListener("click", closeGuitarModal);
-
-/*              
-    
-                     variables for 3D Printing
-                     
-*/
-
-const openPrintingButton = document.querySelector("#Print");
-
-const PrintingModal = document.querySelector("#printingModal");
-
-const closePrintingButton = PrintingModal.querySelector(".modal__close-btn");
-
-/*              
-    
-                     function for #3D Printing
-                     
-*/
-
-function openprintingModal() {
-  PrintingModal.classList.add("modal_opened");
-}
-
-function closePrintingModal() {
-  PrintingModal.classList.remove("modal_opened");
-}
+closeGuitarButton.addEventListener("click", () => {
+  closeModal(GuitarModal);
+});
 
 /*              
     
@@ -236,9 +205,13 @@ function closePrintingModal() {
                      
 */
 
-openPrintingButton.addEventListener("click", openprintingModal);
+openPrintingButton.addEventListener("click", () => {
+  openModal(PrintingModal);
+});
 
-closePrintingButton.addEventListener("click", closePrintingModal);
+closePrintingButton.addEventListener("click", () => {
+  closeModal(PrintingModal);
+});
 
 /*              
     
