@@ -58,7 +58,7 @@ initialCards = [
                      
 */
 
-const cardTemplate = document.querySelector(".card__template");
+const cardTemplate = document.querySelector("#card__template");
 
 const cardList = document.querySelector(".cards__list");
 
@@ -67,8 +67,6 @@ const cardList = document.querySelector(".cards__list");
                      variables for editing
                      
 */
-
-const editOpenButton = document.querySelector("#edit");
 
 const videoEditingModal = document.querySelector("#video_editingModal");
 
@@ -80,8 +78,6 @@ const closeEditButton = videoEditingModal.querySelector(".modal__close-btn");
                      
 */
 
-const openDronesButton = document.querySelector("#Drone");
-
 const DroneModal = document.querySelector("#DronesModal");
 const closeDronesButton = DroneModal.querySelector(".modal__close-btn");
 
@@ -90,8 +86,6 @@ const closeDronesButton = DroneModal.querySelector(".modal__close-btn");
                      variables for Guitar
                      
 */
-
-const openGuitarButton = document.querySelector("#Guitar");
 
 const GuitarModal = document.querySelector("#GuitarModal");
 
@@ -103,37 +97,23 @@ const closeGuitarButton = GuitarModal.querySelector(".modal__close-btn");
                      
 */
 
-const openPrintingButton = document.querySelector("#Print");
-
 const PrintingModal = document.querySelector("#printingModal");
 
 const closePrintingButton = PrintingModal.querySelector(".modal__close-btn");
 
 /*              
     
-                     open / close functions
-                     
-*/
-function openModal(modal) {
-  modal.classList.add("modal_opened");
-}
-
-function closeModal(modal) {
-  modal.classList.remove("modal_opened");
-}
-
-/*              
-    
                      Functions for template 
                      
 */
+
 function getCardElement(data) {
   const cardElement = cardTemplate.content
     .querySelector(".card")
     .cloneNode(true);
 
-  const cardNameEl = cardElement.querySelector(".card__title");
   const cardImg = cardElement.querySelector(".card__image");
+  const cardNameEl = cardElement.querySelector(".card__title");
   const cardDiscription = cardElement.querySelector(".card__discription");
   const cardMoreBtn = cardElement.querySelector(".card__more-btn");
 
@@ -156,6 +136,16 @@ initialCards.forEach((element) => {
   const cardEl = getCardElement(element);
   cardList.append(cardEl);
 });
+
+/*              
+    
+                     open btn variables  
+                     
+*/
+const editOpenButton = document.querySelector("#edit");
+const openDronesButton = document.querySelector("#Drone");
+const openGuitarButton = document.querySelector("#Guitar");
+const openPrintingButton = document.querySelector("#Print");
 
 /*              
     
@@ -215,6 +205,19 @@ closePrintingButton.addEventListener("click", () => {
 
 /*              
     
+                     open / close functions
+                     
+*/
+function openModal(modal) {
+  modal.classList.add("modal_opened");
+}
+
+function closeModal(modal) {
+  modal.classList.remove("modal_opened");
+}
+
+/*              
+    
                      toggle button
                      
 */
@@ -226,8 +229,4 @@ toggleButton.addEventListener("click", onToggleClick);
 
 function onToggleClick() {
   navBar.classList.toggle("nav-open");
-}
-
-function closeToggleClick() {
-  toggleButton.classList.toggle("");
 }
