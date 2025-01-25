@@ -24,6 +24,10 @@
 
 @media screen and (max-width: 700px) {
   .cards__list {
-    grid-template-columns: repeat(auto-fit, 388px);
+    grid-template-columns: repeat(auto-fit, 260px);
+  }
+
+  .cards__title {
+    font-size: 46px;
   }
 }

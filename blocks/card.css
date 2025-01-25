@@ -54,6 +54,23 @@
 
 @media screen and (max-width: 644px) {
   .card__image {
-    height: 250px;
+    height: 140px;
+  }
+
+  .card__more-btn {
+    margin: 14px -2px;
+    font-size: 20px;
+  }
+
+  .card__content {
+    padding: 11px;
+  }
+
+  .card__title {
+    font-size: 34px;
+  }
+
+  .card__discription {
+    font-size: 15px;
   }
 }
