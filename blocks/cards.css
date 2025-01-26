@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 700px) {
   .cards__list {
-    grid-template-columns: repeat(auto-fit, 260px);
+    grid-template-columns: repeat(auto-fit, 300px);
   }
 
   .cards__title {
