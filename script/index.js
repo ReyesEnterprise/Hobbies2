@@ -43,12 +43,7 @@ initialCards = [
     link: "./images/pexels-jakubzerdzicki-19124461.jpg",
     name: "3D printing",
     id: "Print",
-    discription: `growing up I've always been a movie buff I loved how movies
-    unfold and tell a story, how they touch and pull at your
-    emotions. Of course, the next natural step would be to want to
-    make my own movies...right? at least for me, it was I could
-    spend hours on my computer trying to get that perfect clip for
-    my home video.`,
+    discription: `My love for 3D printing is a thrilling exploration of innovation and creativity. Watching designs materialize layer by layer feels like witnessing modern magic. From complex models to practical tools, the potential is limitless. The process of transforming digital concepts into reality with just filament and precision is mesmerizing`,
   },
 ];
 
@@ -100,6 +95,18 @@ const closeGuitarButton = GuitarModal.querySelector(".modal__close-btn");
 const PrintingModal = document.querySelector("#printingModal");
 
 const closePrintingButton = PrintingModal.querySelector(".modal__close-btn");
+
+/*              
+    
+                     variables for Form Modals
+                     
+*/
+
+const formModal = document.querySelector("#formModal");
+
+const closeFormBtn = formModal.querySelector(".modal__close-btn");
+
+const navMoreBtn = document.querySelector(".nav__link-more");
 
 /*              
     
@@ -201,6 +208,20 @@ openPrintingButton.addEventListener("click", () => {
 
 closePrintingButton.addEventListener("click", () => {
   closeModal(PrintingModal);
+});
+
+/*              
+    
+                     event listeners for Form Modal
+                     
+*/
+
+navMoreBtn.addEventListener("click", () => {
+  openModal(formModal);
+});
+
+closeFormBtn.addEventListener("click", () => {
+  closeModal(formModal);
 });
 
 /*              

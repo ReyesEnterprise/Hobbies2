@@ -31,7 +31,7 @@
           <!-- nav-menu"> -->
           <ul id="navBar" class="nav__links">
             <li><a href="idex.html" class="nav__link">Home</a></li>
-            <li><a href="#" class="nav__link">More</a></li>
+            <li><a href="#" class="nav__link nav__link-more">Feedback</a></li>
             <li><a href="#Drone" class="nav__link">Drones</a></li>
             <li><a href="#Guitar" class="nav__link">Guitar</a></li>
             <li><a href="#edit" class="nav__link">Editing</a></li>
@@ -59,11 +59,11 @@
             website you will be able to see how my hobbies have impacted my life
             and what they have meant to me. I also do hope you can enjoy the
             layout, color, and flow of my website as it did take a while to
-            master a lot of these skills like Flexbox and Grid, while some I
-            already knew about it was a fun and enjoyable journey to create this
-            pleasantly appealing website. I would like to thank you for your
-            time and I am always open to any feedback in the more section.
-            please be kind as it is my first official website. Thank you!
+            master a lot of these skills like Flexbox and Grid, and javascript
+            while some I already knew about it was a fun and enjoyable journey
+            to create this pleasantly appealing website. I would like to thank
+            you for your time and I am always open to any feedback. please be
+            kind as it is my first official website. Thank you!
           </p>
         </div>
       </header>
@@ -285,43 +285,97 @@
             alt="Printing more"
           />
           <p class="modal__discription">
-            Editing videos is more than just a task—it's a passion that fuels my
-            creativity and drives me to perfect my craft. With each clip
-            trimmed, transition smoothed, and color-corrected, I immerse myself
-            in a world where storytelling comes to life The process of editing
-            videos challenges me to think critically, problem-solve, and
-            innovate to bring my vision to fruition. It's not just about cutting
-            and pasting—it's about creating a seamless narrative that captivates
-            viewers and evokes emotions. The ability to manipulate visuals and
-            sound to convey a message is a powerful skill that I cherish. Every
-            completed video is a testament to my dedication and growth in this
-            art form. Editing videos isn't just a hobby; it's a love affair that
-            ignites my soul and fuels my desire to keep pushing boundaries in
-            the realm of visual storytelling.
+            My love for 3D printing is a boundless journey into the realms of
+            innovation and creativity. The moment a design takes shape layer by
+            layer before my eyes, it feels like witnessing modern alchemy. From
+            intricate miniatures to functional prototypes, the possibilities are
+            as vast as my imagination. This technology allows me to transform
+            digital dreams into tangible reality, breaking barriers of
+            traditional manufacturing. The tactile nature of creating something
+            from nothing, using just filaments and precision, is incredibly
+            satisfying. I’m constantly exploring new materials and techniques,
+            eager to expand my skills and push boundaries. Sharing these
+            creations with a community that buzzes with the same passion
+            amplifies the joy. Each print is not just an object; it’s a
+            testament to the magic of technology, where ideas take flight and
+            once intangible concepts are crafted into existence.
           </p>
           <div class="modal__btn-flex">
             <button class="modal__btn-link">
               <a
                 class="modal__btn-links"
-                href="../images/Elieens Rollercoster Adventure copy.mp4"
-                >My Edit</a
+                href="https://www.printables.com/model"
+                >printables</a
               >
             </button>
             <button class="modal__btn-link">
-              <a
-                class="modal__btn-links"
-                href="https://www.youtube.com/watch?v=3yYSZTnf96Y"
-                >Software</a
+              <a class="modal__btn-links" href="https://bambulab.com/en-us"
+                >bambulab</a
               >
             </button>
             <button class="modal__btn-link">
-              <a
-                class="modal__btn-links"
-                href="https://www.youtube.com/watch?v=y7Ci_H9bYEk"
-                >more</a
+              <a class="modal__btn-links" href="https://www.shapr3d.com/"
+                >3DSoftware</a
               >
             </button>
           </div>
+        </div>
+      </div>
+      <!-- form modal -->
+      <div class="modal" id="formModal">
+        <div class="modal__container">
+          <button type="submit" class="modal__close-btn"></button>
+          <h2 class="modal__title">Feedback</h2>
+          <form
+            action="mailto:alreyes2381@gmail.com?subject=Feedback"
+            method="post"
+            enctype="text/plain"
+            name="edit-profile"
+            class="modal__form"
+            id="add-card-form"
+          >
+            <label for="add-card-link-input" class="modal__label">
+              Name
+              <input
+                id="add-card-link-input"
+                type="text"
+                name="Name"
+                class="modal__input"
+                placeholder="Input Name Here"
+              />
+            </label>
+            <label for="add-card-caption-input" class="modal__label">
+              Email
+              <input
+                id="add-card-caption-input"
+                type="email"
+                name="email"
+                class="modal__input"
+                placeholder="Input email here"
+              />
+            </label>
+            <label for="add-card-link-input" class="modal__label">
+              Leave a comment
+              <textarea
+                id="add-card-link-input"
+                name="text"
+                rows="4"
+                cols="50"
+                class="modal__input"
+              >
+              </textarea>
+            </label>
+            <div class="modal__btn-flex">
+              <input class="modal__btn-links" type="submit" value="Send" />
+            </div>
+          </form>
+          <!-- <div class="modal__btn-flex">
+            <button type="submit" class="modal__btn-links">
+              <a class="modal__btn-links" href="mailto:alryes2381@gmail.com"
+                >submit</a
+              >
+            </button>
+          </div> -->
         </div>
       </div>
       <script defer src="./script/index.js"></script>
