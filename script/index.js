@@ -101,6 +101,7 @@ const closePrintingButton = PrintingModal.querySelector(".modal__close-btn");
                      variables for Form Modals
                      
 */
+const feedbackForm = document.forms.feedbackForm;
 
 const formModal = document.querySelector("#formModal");
 
@@ -222,6 +223,7 @@ navMoreBtn.addEventListener("click", () => {
 
 closeFormBtn.addEventListener("click", () => {
   closeModal(formModal);
+  feedbackForm.reset();
 });
 
 /*              

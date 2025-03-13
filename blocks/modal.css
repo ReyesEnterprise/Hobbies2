@@ -74,6 +74,14 @@
   cursor: pointer;
 }
 
+.modal__input:invalid {
+  border: 2px solid red;
+}
+
+.modal__input:valid {
+  border: 2px solid green;
+}
+
 .modal__img {
   float: left;
   width: 48%;
